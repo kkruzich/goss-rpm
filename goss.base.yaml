@@ -1,0 +1,33 @@
+gossfile:
+  /usr/local/etc/goss/goss.d/*.yaml: {}
+command:
+  ping -c1 8.8.8.8 >/dev/null:
+    exit-status: 0
+    stderr: []
+    timeout: 3000
+dns:
+  google-public-dns-b.google.com:
+    resolvable: true
+    timeout: 500
+package:
+  coreutils:
+    installed: true
+port:
+  tcp:22:
+    listening: true
+    ip:
+service:
+  sshd:
+    enabled: true
+    running: true
+user:
+  sshd:
+    exists: true
+    groups:
+    - sshd
+group:
+  sshd:
+    exists: true
+process:
+  sshd:
+    running: true

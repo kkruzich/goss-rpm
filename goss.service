@@ -1,0 +1,9 @@
+[Unit]
+Description=goss
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/goss -g "/usr/local/etc/goss/goss.base.yaml" s --format documentation -e /status -l :8090 >/var/log/goss.log 2&>1 &
+
+[Install]
+WantedBy=multi-user.target

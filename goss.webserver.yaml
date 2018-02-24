@@ -1,0 +1,17 @@
+##
+## This is provided as an example only. Uncomment if you have a webserver running. See 
+## the key 'gossfile:' in goss.base.yaml.
+##
+## port:
+##   tcp:80:
+##     listening: true
+##     ip:
+##     - 0.0.0.0
+##   tcp:443:
+##     listening: true
+##     ip:
+##     - 0.0.0.0
+## service:
+##   httpd:
+##     enabled: true
+##     running: true
