@@ -8,6 +8,12 @@ goss on CentOS 7, an RPM specfile for building a goss package, and a couple of s
 YAML files for running goss.
 
 ##
+Install go and glide:
+
+    # yum install golang-bin 
+    # yum install glide
+
+##
 Build goss with go:
 
 ```# sudo yum -y install glide golang-bin
